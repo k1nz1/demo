@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<title>SIGN UP</title>
+</head>
+
+<font face="Ariel blue">
+<body>
+
+<p style="color: blue; font-size: 80px"> SIGN UP </p> 
+
+	<form name = "Form1" onSubmit=return(validate())>
+	<label>Name:</label>
+	<input type="text" value="" name="name"><br> 
+
+	<label>Email:</label>
+	<input type="text" name="email"><br>
+        
+        <label>Gender: </label>
+	<input type="radio" name="gender"> <label> Male </label>
+	<input type="radio" name="gender"> <label> Female </label> <br>
+
+	<label>Hobbies:</label><br>
+	<input type="checkbox" > <label> Football </label><br>
+	<input type="checkbox" > <label> swimming </label><br>
+	<input type="checkbox" > <label> playing chess </label><br>
+	<input type="checkbox" > <label> eating</label><br>
+	
+	<label>Course:</label> 
+	<select> 
+                <option value><option value/>
+		<option value="CSC"> CSC </option>
+		<option value="BBIT"> BBIT </option>
+		<option value="BCM"> IBM</option>
+	</select>
+	<br>
+	
+	<label>Comment:</label> <br>
+	<textarea rows="7" cols="50"></textarea> <br>
+
+
+
+	<input type="Submit" value="Send">
+	<input type="Reset" value="Refresh"><br>
+
+
+
+<script type="text/javascript">
+	
+function validate(){
+
+	if(document.Form1.name.value == "")
+	{
+		alert("please fill in the name");
+		return false;
+	}
+
+	if(document.Form1.email.value == "")
+	{
+		alert("please enter your email");
+		return false;
+
+	}
+
+}
+</script>
+</form>
+
+
+</body>
+
+</html>
